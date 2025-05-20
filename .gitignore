@@ -1,0 +1,31 @@
+# Java/Gradle build artifacts
+/build/
+/out/
+/.gradle/
+.gradle/
+
+# IDE/project files
+*.iml
+*.ipr
+*.iws
+.idea/
+*.class
+*.log
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment/secret files
+private_key.pem
+public_key.pem
+.env
+*.keystore
+
+# Misc
+*.tmp
+*.bak
+
+# VSCode
+.vscode/
