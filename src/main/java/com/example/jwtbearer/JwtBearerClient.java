@@ -118,7 +118,7 @@ public class JwtBearerClient {
         Map<String, Object> result = new HashMap<>();
         try {
             ResponseEntity<String> response = restTemplate.postForEntity(TOKEN_ENDPOINT, entity, String.class);
-            result.put("status", response.getStatusCodeValue());
+            result.put("status", response.getStatusCode().value());
             result.put("body", response.getBody());
             // レスポンスJSONからaccess_token等を抽出
             ObjectMapper mapper = new ObjectMapper();
